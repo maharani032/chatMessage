@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Chat Message Apps</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="nav_sign_up">Sign Up</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="forget_password">"I'm forget the password !"</string>
+    <string name="title_login">"Please Sign In For\n Use The Apps"</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="prompt_username">Username</string>
+    <string name="title_forget">Forget The Password</string>
+    <string name="action_reset_password">reset password</string>
+
+</resources>
