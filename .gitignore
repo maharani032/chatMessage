@@ -8,11 +8,11 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 ./app/google-services.json
-./app/mychatmessageapp001-firebase-adminsdk-copkc-665767aadd.json
+
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
-
+serviceAccountKey.json
