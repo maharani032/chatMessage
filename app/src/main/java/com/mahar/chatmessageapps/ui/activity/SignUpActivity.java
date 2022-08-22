@@ -23,7 +23,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -31,7 +30,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.mahar.chatmessageapps.MainActivity;
 import com.mahar.chatmessageapps.R;
 import com.squareup.picasso.Picasso;
 import java.util.UUID;
@@ -52,13 +50,14 @@ public class SignUpActivity extends AppCompatActivity {
     FirebaseStorage firebaseStorage;
     StorageReference storageReference;
     Uri selectedImage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         RegisterActivityForUploadImage();
 
-        profileImage=findViewById(R.id.profile_image);
+        profileImage=findViewById(R.id.profile_username);
         inputEmail=findViewById(R.id.inputEmailSignUp);
         inputPassword=findViewById(R.id.inputPasswordSignUp);
         inputUsername=findViewById(R.id.inputUsernameSignUp);
@@ -129,7 +128,7 @@ public class SignUpActivity extends AppCompatActivity {
                                 reference.child("Users").child(auth.getUid()).child("image").setValue("null");
 
                             }
-                            Intent i= new Intent(SignUpActivity.this, MainActivity.class);
+                            Intent i= new Intent(SignUpActivity.this, HomePageActivity.class);
                             i.putExtra("userName",username);
                             startActivity(i);
                             finish();

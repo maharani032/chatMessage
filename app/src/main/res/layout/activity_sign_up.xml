@@ -7,7 +7,7 @@
     tools:context=".ui.activity.SignUpActivity">
 
   <de.hdodenhof.circleimageview.CircleImageView
-      android:id="@+id/profile_image"
+      android:id="@+id/profile_username"
       android:layout_width="150dp"
       android:layout_height="150dp"
       android:layout_marginTop="20dp"
@@ -27,7 +27,7 @@
       android:gravity="start"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/profile_image">
+      app:layout_constraintTop_toBottomOf="@+id/profile_username">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/inputEmailSignUp"

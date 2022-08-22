@@ -3,12 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1635" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1635" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.1635" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1635" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1635" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1635" />
         <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/activity_forget_password.xml" value="0.33" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/activity_home_page.xml" value="0.22" />
         <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/activity_login.xml" value="0.17" />
         <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/activity_main.xml" value="0.11481481481481481" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/activity_profile_update.xml" value="0.33" />
         <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/fragment_dashboard.xml" value="0.184375" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/fragment_notifications.xml" value="0.184375" />
+        <entry key="..\:/AndroidJava/ChatMessageApps/app/src/main/res/layout/fragment_setting.xml" value="0.33" />
       </map>
     </option>
   </component>

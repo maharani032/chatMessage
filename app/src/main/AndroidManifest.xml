@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mahar.chatmessageapps">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,8 +17,17 @@
         android:theme="@style/Theme.ChatMessageApps"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activity.ProfileUpdateActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.HomePageActivity"/>
+        <activity
+            android:name=".ui.activity.HomePageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home_page" />
+        <activity
             android:name=".ui.activity.ForgetPasswordActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".ui.activity.SignInActivity" />
         <activity
             android:name=".ui.activity.SignInActivity"
             android:exported="true">
@@ -28,10 +39,12 @@
         </activity>
         <activity
             android:name=".ui.activity.SignUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".ui.activity.SignInActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

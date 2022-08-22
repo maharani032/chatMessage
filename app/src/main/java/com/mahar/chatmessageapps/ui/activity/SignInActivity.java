@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.mahar.chatmessageapps.MainActivity;
+import com.google.firebase.auth.FirebaseUser;
 import com.mahar.chatmessageapps.R;
 
 
@@ -72,7 +72,7 @@ public class SignInActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()){
-                    Intent intent= new Intent(SignInActivity.this, MainActivity.class);
+                    Intent intent= new Intent(SignInActivity.this, HomePageActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(SignInActivity.this,"Sign In not Successful",Toast.LENGTH_SHORT).show();
@@ -81,4 +81,14 @@ public class SignInActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user=auth.getCurrentUser();
+        if(user!=null){
+            Intent i = new Intent(SignInActivity.this,HomePageActivity.class);
+            startActivity(i);
+            finish();
+        }
+    }
 }

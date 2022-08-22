@@ -16,5 +16,13 @@
     <string name="prompt_username">Username</string>
     <string name="title_forget">Forget The Password</string>
     <string name="action_reset_password">reset password</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_signout">Sign Out</string>
+    <string name="update_image_profile">Update your image profile</string>
+    <string name="actions_update">Update your profile</string>
+
+    <string name="title_notifications">Notifications</string>
 
 </resources>
