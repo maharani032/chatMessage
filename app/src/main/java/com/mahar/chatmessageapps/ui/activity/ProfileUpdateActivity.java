@@ -54,6 +54,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
     StorageReference storageReference;
     DatabaseReference reference;
     FirebaseUser user;
+    String imageUri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +103,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String userName= snapshot.child("userName").getValue().toString();
-                String imageUri=snapshot.child("image").getValue().toString();
+                imageUri=snapshot.child("image").getValue().toString();
                 inputUsername.setText(userName);
                 if(!imageUri.equals("null")){
                     Picasso.get().load(imageUri).into(updateProfileImage);
@@ -167,7 +168,7 @@ public class ProfileUpdateActivity extends AppCompatActivity {
             });
         }else{
             Log.i("imageControl","no imageControl");
-            reference.child("Users").child(auth.getUid()).child("image").setValue("null");
+            reference.child("Users").child(auth.getUid()).child("image").setValue(imageUri);
 
         }
         Intent i= new Intent(ProfileUpdateActivity.this, HomePageActivity.class);

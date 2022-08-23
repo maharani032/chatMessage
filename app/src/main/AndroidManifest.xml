@@ -17,17 +17,24 @@
         android:theme="@style/Theme.ChatMessageApps"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activity.MyChatActivity"
+            android:exported="false"
+            />
+        <activity
             android:name=".ui.activity.ProfileUpdateActivity"
             android:exported="false"
-            android:parentActivityName=".ui.activity.HomePageActivity"/>
+            android:parentActivityName=".ui.activity.HomePageActivity"
+            android:theme="@style/Theme.ChatMessageApps.ActionBar"/>
         <activity
             android:name=".ui.activity.HomePageActivity"
             android:exported="false"
-            android:label="@string/title_activity_home_page" />
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/Theme.ChatMessageApps.ActionBar"/>
         <activity
             android:name=".ui.activity.ForgetPasswordActivity"
             android:exported="false"
-            android:parentActivityName=".ui.activity.SignInActivity" />
+            android:parentActivityName=".ui.activity.SignInActivity"
+            android:theme="@style/Theme.ChatMessageApps.ActionBar"/>
         <activity
             android:name=".ui.activity.SignInActivity"
             android:exported="true">
@@ -40,10 +47,8 @@
         <activity
             android:name=".ui.activity.SignUpActivity"
             android:exported="false"
-            android:parentActivityName=".ui.activity.SignInActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:parentActivityName=".ui.activity.SignInActivity"
+            android:theme="@style/Theme.ChatMessageApps.ActionBar"/>
 
         <meta-data
             android:name="preloaded_fonts"
